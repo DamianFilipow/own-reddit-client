@@ -1,0 +1,15 @@
+.error-box {
+    width: 25%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.error-button {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+}
