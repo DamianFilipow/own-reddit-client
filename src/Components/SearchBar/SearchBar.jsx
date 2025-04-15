@@ -16,7 +16,7 @@ function SearchBar(props) {
     return (
         <header className='header' data-testid='search-bar'>
             <figure className='logo'>
-                <img className='logo-img' src="https://cdn-icons-png.flaticon.com/512/2504/2504787.png"/>
+                <img className='logo-img' src="https://cdn-icons-png.flaticon.com/512/2504/2504787.png" alt='logo'/>
                 <figcaption>CCReddit</figcaption>
             </figure>
             <form className='search-form' onSubmit={e => e.preventDefault()}>
