@@ -32,11 +32,11 @@ function Post({ data }) {
             )}
   
             {isActualGif && (
-              <img className='thumbnail' src={previewUrl} />
+              <img className='thumbnail' src={previewUrl} alt='gif image'/>
             )}
   
             {isImage && (
-              <img className='thumbnail' src={previewUrl} />
+              <img className='thumbnail' src={previewUrl} alt='post image'/>
             )}
   
             {isYouTube && (
