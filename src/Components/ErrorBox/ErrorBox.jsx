@@ -1,9 +1,7 @@
 
-
 import './styles.css'
 
 function ErrorBox(props) {
-
 
     function handleClick() {
         props.setInputValue('')
@@ -11,7 +9,7 @@ function ErrorBox(props) {
     }
 
     return (
-        <div className='error-box'>
+        <div className='error-box' data-testid='error-box'>
             <p>No matching records</p>
             <button type='button' className='error-button' onClick={handleClick}>Return Home</button>
         </div>

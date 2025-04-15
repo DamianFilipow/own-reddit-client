@@ -5,6 +5,7 @@
     padding: 1%;
     display: flex;
     gap: 1%;
+    max-height: 1100px;
 }
 
 .post-container {
@@ -15,6 +16,7 @@
 
 .thumbnail {
     width: 100%;
+    max-height: 900px;
 }
 
 .score {
@@ -27,6 +29,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 

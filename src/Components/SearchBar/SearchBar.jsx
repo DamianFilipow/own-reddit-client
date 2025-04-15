@@ -14,10 +14,13 @@ function SearchBar(props) {
     }
     
     return (
-        <header className='header'>
-            <figure className='logo'> Logo</figure>
+        <header className='header' data-testid='search-bar'>
+            <figure className='logo'>
+                <img className='logo-img' src="https://cdn-icons-png.flaticon.com/512/2504/2504787.png"/>
+                <figcaption>CCReddit</figcaption>
+            </figure>
             <form className='search-form' onSubmit={e => e.preventDefault()}>
-                <input type='text' placeholder='Search' className='search-input' onChange={handleChange} value={props.inputValue} />
+                <input type='text' placeholder='Search' className='search-input' onChange={handleChange} value={props.inputValue} data-testid='text-input'/>
                 <button type='button' className='search-icon' onClick={handleClick}><FontAwesomeIcon icon={faSearch} /></button>
             </form>
         </header>

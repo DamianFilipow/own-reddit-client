@@ -1,0 +1,16 @@
+.app-container {
+    width:95%;
+    display:flex;
+    flex-direction:row; 
+    justify-content:space-around; 
+    margin:auto; 
+    margin-top:2%; 
+    gap:1%;
+}
+
+@media only screen and (max-width: 768px) {
+    .app-container {
+        width: 90%;
+        justify-content: center;
+    }
+}

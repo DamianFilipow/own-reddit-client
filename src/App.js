@@ -3,6 +3,8 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 import CategoriesList from "./Components/CategoriesList/CategoriesList";
 import { useState } from "react";
 
+import './App.css'
+
 function App() {
 
   const [query, setQuery] = useState('')
@@ -13,7 +15,7 @@ function App() {
   return (
     <>
       <SearchBar inputValue={inputValue} setInputValue={setInputValue} setQuery={setQuery}/>
-      <div style={{width:"95%", display:"flex", flexDirection:"row", justifyContent:'space-around', margin:'auto', marginTop:'2%', gap:'1%'}}>
+      <div className='app-container'>
         <RedditsList selectedSubreddit={selectedSubreddit} query={query} setInputValue={setInputValue} setQuery={setQuery}/>
         <CategoriesList selectedSubreddit={selectedSubreddit} setSubreddit={setSubreddit}/>
       </div>
